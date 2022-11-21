@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="MiniProject_ComplaintRegisteration.Admin.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="../css/mycss.css" rel="stylesheet" />
+
+     <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../Customer/customer_css/fonts/icomoon/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../Customer/customer_css/css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="../Customer/customer_css/css/style.css">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    
+ <header id="header">  
+Complaint Register Project
+</header>  
+<nav id="nav">  
+    <ul>   
+          
+        <li><a href="../Admin/Admin_ProductPage.aspx">Products</a></li> 
+        <li><a href="../Admin/Admin_StudentDetails.aspx">Users</a></li> 
+        <li><a href="../Admin/Admin_ComplaintPage.aspx">Complaints</a></li> 
+        <li><a href="../Admin/Admin_QueryPage.aspx">Queries</a></li>  
+        <li><a href="../Guest/LogoutPage.aspx">Logout</a></li>  
+
+
+    </ul>  
+</nav> 
+     <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+         
+    </form>
+</body>
+     <script src="../Customer/customer_css/js/jquery-3.3.1.min.js"></script>
+    <script src="../Customer/customer_css/js/popper.min.js"></script>
+    <script src="../Customer/customer_css/js/bootstrap.min.js"></script>
+    <script src="../Customer/customer_css/js/jquery.validate.min.js"></script>
+    <script src="../Customer/customer_css/js/main.js"></script>
+</html>
